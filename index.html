@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPor</title>
+        <!-- Render All Elaments Normally-->
+        <link rel="stylesheet" href="css/normalize.css">
+        <!-- Main Template CSS File-->
+        <link rel="stylesheet" href="css/style.css"/>
+        <!-- myFrameWWork File  -->
+        <link rel="stylesheet" href="css/myFrameWork.css">
+        <!-- Font Awesome Library-->
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- Swiper js files  -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+        />
+        <!-- Google Fonts Open Sans -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,800&display=swap" rel="stylesheet">      
+</head>
+<body>
+    <!-- Start Header  -->
+    <header>
+        <div class="container flex-c-be">
+            <div id="btn" class="list">
+                <i class="fa-solid fa-bars b-radius cursor-p flex-c-c " style="color: #a5a58d;"></i>
+            </div>
+            <ul id="list" class="flex-c-be" >
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a class="myPro" href="#">MyPro</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#test-ml">Testimonial</a></li>
+                <li><a href="#contactUs">Contact</a></li>
+            </ul>     
+            <a class="myPro hide flex-c-c" href="">MyPro</a>
+        </div>
+    </header>
+    <!-- End Header  -->
+    <!-- Start Home Section -->
+    <section class="home" id="home">
+        <img src="img/bg-header.png" alt="">
+        <div class="container flex-itc">
+            <div class="row-one">
+                <div class="head">
+                    <span>I'm</span>
+                    <h1>Kate Winslet</h1>
+                    <p><span class="auto-input"></span></p>
+                </div>
+                <div class="down-play flex-itc">
+                    <div id="dwld" class="download">
+                        <input id="file" type="file"></input>
+                        <label for="file" class="b-radius cursor-p">Download Cv</label>
+                    </div>
+                    <div class="play flex-c-c  cursor-p"  id="play-btn">
+                        <div id="available" class="not-available show">
+                            <span class="flex-c-c">!</span>
+                            <div>Sorry this video is not available right now</div>
+                            <i id="ex" class="fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <span>Play Video</span>
+                </div>
+            </div>
+            <div class="row-two">
+                <img src="img/profile.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Start Home Section -->
+    <!-- Start About Section-->
+    <section class="about" id="about">
+        <div class="container ">
+            <div class="about-info">
+                <div class="experience flex-itc">
+                    <div class="years">
+                        <span>12</span>
+                        <span>Years</span>
+                    </div>
+                    <p>of working experience as a web designer & developer</p>
+                </div>
+                <div class="info">
+                    <p>Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p>
+                </div>
+                <div class="points">
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        <span>Afordable Prices</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-check" ></i>
+                        <span>High Quality Product</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        <span>On Time Project Delivery</span>
+                    </div>
+                </div>
+                <div class="link">
+                    <a class="b-radius" href="#">Read More</a>
+                </div>
+            </div>
+            <div class="clients">
+                <div class="pic">
+                    <img src="img/about-1.jpg" alt="">
+                    <img src="img/about-2.jpg" alt="">
+                </div>
+                <div class="prog">
+                    <div class="count flex-itc">
+                        <span>Happy Clients</span>
+                        <span>1233</span>
+                    </div>
+                    <p>Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam amet diam ipsum clita labore dolor duo clita.</p>
+                </div>
+                <div class="prog">
+                    <div class="count flex-itc">
+                        <span>Projects Completed</span>
+                        <span>2123</span>
+                    </div>
+                    <p>Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam amet diam ipsum clita labore dolor duo clita.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Section -->
+    <!-- Start Skills Section -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#f5f5f5" fill-opacity="1" d="M0,64L15,80C30,96,60,128,90,144C120,160,150,160,180,176C210,192,240,224,270,224C300,224,330,192,360,149.3C390,107,420,53,450,58.7C480,64,510,128,540,133.3C570,139,600,85,630,64C660,43,690,53,720,69.3C750,85,780,107,810,149.3C840,192,870,256,900,250.7C930,245,960,171,990,165.3C1020,160,1050,224,1080,224C1110,224,1140,160,1170,149.3C1200,139,1230,181,1260,202.7C1290,224,1320,224,1350,192C1380,160,1410,96,1425,64L1440,32L1440,0L1425,0C1410,0,1380,0,1350,0C1320,0,1290,0,1260,0C1230,0,1200,0,1170,0C1140,0,1110,0,1080,0C1050,0,1020,0,990,0C960,0,930,0,900,0C870,0,840,0,810,0C780,0,750,0,720,0C690,0,660,0,630,0C600,0,570,0,540,0C510,0,480,0,450,0C420,0,390,0,360,0C330,0,300,0,270,0C240,0,210,0,180,0C150,0,120,0,90,0C60,0,30,0,15,0L0,0Z"></path>
+    </svg>
+    <section class="skills" id="skills">
+        <div class="container flex-itc">
+            <div class="my-skills">
+                <h2 class="header">Skills & Experience</h2>
+                <p>Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum clita dolor duo clita sit.</p>
+                <div class="skills-prog">
+                    <h3>My Skills</h3>
+                    <div class="skills-holder">
+                        <div class="prog-holder">
+                            <div class="head">
+                                <h4>HTML</h4>
+                                <span>97%</span>
+                            </div>
+                            <div class="prog">
+                                <span data-progress="97%" style="width:97%"></span>
+                            </div>
+                        </div>
+                        <div class="prog-holder">
+                            <div class="head">
+                                <h4>CSS</h4>
+                                <span>95%</span>
+                            </div>
+                            <div class="prog">
+                                <span data-progress="95%" style="width:95%"></span>
+                            </div>
+                        </div>
+                        <div class="prog-holder">
+                            <div class="head">
+                                <h4>PHP</h4>
+                                <span>85%</span>
+                            </div>
+                            <div class="prog">
+                                <span data-progress="85%" style="width:85%"></span>
+                            </div>
+                        </div>
+                        <div class="prog-holder">
+                            <div class="head">
+                                <h4>JavaScript</h4>
+                                <span>88%</span>
+                            </div>
+                            <div class="prog">
+                                <span data-progress="88%" style="width:88%"></span>
+                            </div>
+                        </div>
+                        <div class="prog-holder">
+                            <div class="head">
+                                <h4>Angular Js</h4>
+                                <span>91%</span>
+                            </div>
+                            <div class="prog">
+                                <span data-progress="91%" style="width:91%"></span>
+                            </div>
+                        </div>
+                        <div class="prog-holder">
+                            <div class="head">
+                                <h4>Wordpress</h4>
+                                <span>80%</span>
+                            </div>
+                            <div class="prog">
+                                <span data-progress="80%" style="width:80%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-experience">
+                <div class="switch-buttons flex-itc">
+                    <button id="btnOne" class="active">Experience</button>    
+                    <button id="btnTwo">Education</button>    
+                </div>
+                <div id="rowOne" class="row flex-itc">
+                    <div class="col">
+                        <h4>UI Designer</h4>
+                        <span>2000 - 2245</span>
+                        <p>Apex Software Inc</p>
+                    </div>
+                    <div class="col">
+                        <h4>Product Designer</h4>
+                        <span>2000 - 2800</span>
+                        <p>Apex Software Inc</p>
+                    </div>
+                    <div class="col">
+                        <h4>Web Designer</h4>
+                        <span>2000 - 3000</span>
+                        <p>Apex Software Inc</p>
+                    </div>
+                    <div class="col">
+                        <h4>Apps Designer</h4>
+                        <span>2000 - 3200</span>
+                        <p>Apex Software Inc</p>
+                    </div>
+                </div>
+                <div id="rowTwo" class="row flex-itc hide">
+                    <div class="col">
+                        <h4>UI Design Course</h4>
+                        <span>2000 - 2245</span>
+                        <p>Cambridge University</p>
+                    </div>
+                    <div class="col">
+                        <h4>IOS Development</h4>
+                        <span>2000 - 2800</span>
+                        <p>Cambridge University</p>
+                    </div>
+                    <div class="col">
+                        <h4>Web Design</h4>
+                        <span>2000 - 3000</span>
+                        <p>Cambridge University</p>
+                    </div>
+                    <div class="col">
+                        <h4>Apps Design</h4>
+                        <span>2000 - 3200</span>
+                        <p>Cambridge University</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Skills Section -->
+    <!-- Start Services Section  -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="head flex-c-be">
+                <h2 class="header">My Services</h2>
+                <a class="b-radius btn" href="#">Hire Me</a>
+            </div>
+            <div class="services-content">
+                <div id="crea" class="col">
+                    <div class="icon">
+                        <i class="fa fa-crop-alt fa-2x"></i>
+                    </div>
+                    <div class="content">
+                        <h3>Creative Design</h3>
+                        <span>Start From <span>$199</span></span>
+                        <p>Stet lorem dolor diam amet vero eos. No stet est diam amet diam ipsum. Clita dolor duo clita sit sed sit dolor eos.</p>
+                    </div>
+                </div>
+                <div id="grph" class="col">
+                    <div class="icon">
+                        <i class="fa fa-code-branch fa-2x"></i>
+                    </div>
+                    <div class="content">
+                        <h3>Graphic Design</h3>
+                        <span>Start From <span>$229</span></span>
+                        <p>Stet lorem dolor diam amet vero eos. No stet est diam amet diam ipsum. Clita dolor duo clita sit sed sit dolor eos.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="icon">
+                        <i class="fa fa-code fa-2x"></i>
+                    </div>
+                    <div class="content">
+                        <h3>Web Design</h3>
+                        <span>Start From <span>$299</span></span>
+                        <p>Stet lorem dolor diam amet vero eos. No stet est diam amet diam ipsum. Clita dolor duo clita sit sed sit dolor eos.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="icon">
+                        <i class="fa fa-laptop-code fa-2x"></i>
+                    </div>
+                    <div class="content">
+                        <h3>UI/UX Design</h3>
+                        <span>Start From <span>$219</span></span>
+                        <p>Stet lorem dolor diam amet vero eos. No stet est diam amet diam ipsum. Clita dolor duo clita sit sed sit dolor eos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Services Section  -->
+    <!-- Start Projects Section  -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#f5f5f5" fill-opacity="1" d="M0,64L15,80C30,96,60,128,90,144C120,160,150,160,180,176C210,192,240,224,270,224C300,224,330,192,360,149.3C390,107,420,53,450,58.7C480,64,510,128,540,133.3C570,139,600,85,630,64C660,43,690,53,720,69.3C750,85,780,107,810,149.3C840,192,870,256,900,250.7C930,245,960,171,990,165.3C1020,160,1050,224,1080,224C1110,224,1140,160,1170,149.3C1200,139,1230,181,1260,202.7C1290,224,1320,224,1350,192C1380,160,1410,96,1425,64L1440,32L1440,0L1425,0C1410,0,1380,0,1350,0C1320,0,1290,0,1260,0C1230,0,1200,0,1170,0C1140,0,1110,0,1080,0C1050,0,1020,0,990,0C960,0,930,0,900,0C870,0,840,0,810,0C780,0,750,0,720,0C690,0,660,0,630,0C600,0,570,0,540,0C510,0,480,0,450,0C420,0,390,0,360,0C330,0,300,0,270,0C240,0,210,0,180,0C150,0,120,0,90,0C60,0,30,0,15,0L0,0Z"></path>
+    </svg>
+    <section class="projects" id="project">
+        <div class="container">
+            <div class="head flex-c-be">
+                <h2 class="header">My Projects</h2>
+                <div class="menu flex-itc">
+                    <a id="all" href="#" class="active">All Projects</a>
+                    <a id="ui-ux" href="#">UI/UX Design</a>
+                    <a id="grDes" href="#">Graphic Design</a>
+                </div>
+            </div>
+            <div id="allProjts" class="projects-content">
+                <div id="pOne" class="project">
+                    <img id="imgOne" src="img/project-1.jpg" alt="">
+                    <div class="icon">
+                        <i class="fa-solid fa-eye eye-show"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+                </div>
+                <div id="pTwo"  class="project">
+                    <img src="img/project-2.jpg" alt="">
+                    <div class="icon">
+                        <i class="fa-solid fa-eye eye-show"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+                </div>
+                <div id="pThree"  class="project">
+                    <img src="img/project-3.jpg" alt="">
+                    <div class="icon">
+                        <i class="fa-solid fa-eye eye-show"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+                </div>
+                <div id="pFour"  class="project">
+                    <img src="img/project-4.jpg" alt="">
+                    <div class="icon">
+                        <i class="fa-solid fa-eye eye-show"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+                </div>
+                <div id="pFive"  class="project">
+                    <img src="img/project-5.jpg" alt="">
+                    <div class="icon">
+                        <i class="fa-solid fa-eye eye-show"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+                </div>
+                <div id="pSix" class="project">
+                    <img src="img/project-6.jpg" alt="">
+                    <div class="icon">
+                        <i class="fa-solid fa-eye eye-show"></i>
+                        <i class="fa-solid fa-share"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Projects Section  -->
+    <!-- Start Team-Members Section -->
+    <Section class="team-members" id="team">
+        <div class="container">
+            <div class="head flex-c-be">
+                <h2 class="header">Team Members</h2>
+                <a class="b-radius btn" href="#">Contact Us</a>
+            </div>
+            <div class="team-members-content">
+                <div class="box">
+                    <img src="img/team-1.jpg" alt="">
+                    <div class="infos flex-c-be ">
+                        <div class="name">
+                            <span>Full Name</span>
+                            <span>Designer</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/team-2.jpg" alt="">
+                    <div class="infos">
+                        <div class="name">
+                            <span>Full Name</span>
+                            <span>Designer</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/team-3.jpg" alt="">
+                    <div class="infos">
+                        <div class="name">
+                            <span>Full Name</span>
+                            <span>Designer</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#f5f5f5" fill-opacity="1" d="M0,64L15,80C30,96,60,128,90,144C120,160,150,160,180,176C210,192,240,224,270,224C300,224,330,192,360,149.3C390,107,420,53,450,58.7C480,64,510,128,540,133.3C570,139,600,85,630,64C660,43,690,53,720,69.3C750,85,780,107,810,149.3C840,192,870,256,900,250.7C930,245,960,171,990,165.3C1020,160,1050,224,1080,224C1110,224,1140,160,1170,149.3C1200,139,1230,181,1260,202.7C1290,224,1320,224,1350,192C1380,160,1410,96,1425,64L1440,32L1440,0L1425,0C1410,0,1380,0,1350,0C1320,0,1290,0,1260,0C1230,0,1200,0,1170,0C1140,0,1110,0,1080,0C1050,0,1020,0,990,0C960,0,930,0,900,0C870,0,840,0,810,0C780,0,750,0,720,0C690,0,660,0,630,0C600,0,570,0,540,0C510,0,480,0,450,0C420,0,390,0,360,0C330,0,300,0,270,0C240,0,210,0,180,0C150,0,120,0,90,0C60,0,30,0,15,0L0,0Z"></path>
+    </svg>
+    <!-- End Team-Members Section -->
+    <!-- Start Testimonial Section  -->
+    <section class="testimonial" id="test-ml">
+        <h2 style="text-align: center;" class="header">Testimonial</h2>
+        <div class="profiles">
+            <img class="one" src="img/testimonial-1.jpg" alt="">
+            <img class="two" src="img/testimonial-2.jpg" alt="">
+            <img class="three" src="img/testimonial-3.jpg" alt="">
+            <img class="four" src="img/testimonial-1.jpg" alt="">
+            <img class="five" src="img/testimonial-2.jpg" alt="">
+            <img class="six" src="img/testimonial-3.jpg" alt="">
+        </div>
+        <div class="container"> 
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="box">
+                        <div class="img">
+                            <img src="img/testimonial-1.jpg" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ab veniam quam cum! Ipsum corrupti quia eius delectus quas dolores nisi error beatae neque libero.</p>
+                        <div class="client-info">
+                            <h4>Client Name</h4>
+                            <span>Profession</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <div class="img">
+                            <img src="img/testimonial-2.jpg" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ab veniam quam cum! Ipsum corrupti quia eius delectus quas dolores nisi error beatae neque libero.</p>
+                        <div class="client-info">
+                            <h4>Client Name</h4>
+                            <span>Profession</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <div class="img">
+                            <img src="img/testimonial-3.jpg" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ab veniam quam cum! Ipsum corrupti quia eius delectus quas dolores nisi error beatae neque libero.</p>
+                        <div class="client-info">
+                            <h4>Client Name</h4>
+                            <span>Profession</span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- End Testimonial Section  -->
+    <!-- Start Contact Us  -->
+    <section class="contact-us" id="contactUs">
+        <div class="container">
+            <div class="head flex-c-be">
+                <h2 class="header">Let's Work Together</h2>
+                <a class="b-radius btn" href="#">Say Hello</a>
+            </div>
+            <div class="contactUs-content">
+                <div class="our-infos">
+                    <span>My office:</span>
+                    <h3>123 Street, Agadir, MRC</h3>
+                    <hr>
+                    <span>Call me:</span>
+                    <h3>+212600000000</h3>
+                    <hr>
+                    <span>Mail me:</span>
+                    <h3>info@exmaple.com</h3>
+                    <hr>
+                    <span>Follow me:</span>
+                    <div class="social">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
+                <div class="your-infos">
+                    <p>The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="#">Download Now.</a></p>
+                    <form>
+                        <input type="text" name="urname" placeholder="Your Name">
+                        <input type="email" name="email" placeholder="Your Email">
+                        <input type="text" name="subj" placeholder="Subject">
+                        <textarea placeholder="Message"></textarea>
+                        <a href="#">Send Message</a>
+                    </form>
+                </div>
+            </div>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d686923.2889678021!2d-9.691005527185599!3d30.25239852274975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb3b6e9daad1cc9%3A0xbcf8d0b78bf48474!2z2KPar9in2K_ZitixIDgwMDAw!5e0!3m2!1sar!2sma!4v1683991020866!5m2!1sar!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <!-- End Contact Us  -->
+    <!-- Start Footer Section  -->
+    <div class="footer">
+        Design And Developed by Abdessamad. <span>Copyright © 2023</span>. All Rights Reserved. <br>
+        Distributed By ThemeWagon
+    </div>
+    <!-- End Footer Section  -->
+    <!-- Start auto typed  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-input", {
+            strings: ["Front End Developer", "Web Developer", "Web Designer", "Apps Designer", "Apps Developer"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+    </script>
+    <!-- End auto typed  -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
